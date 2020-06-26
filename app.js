@@ -23,7 +23,7 @@ yargs.command({
     },
     handler: function(argv) {
         console.log('Title', argv.title)
-        console.log('Body', argv.title)
+        console.log('Body', argv.body)
     }
 })
 //add, remove, read, list

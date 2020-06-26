@@ -1,0 +1,2 @@
+My name is Devthis is append data using appendFileSync
+this is append data using appendFileSync

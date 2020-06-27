@@ -1,2 +1,17 @@
-My name is Devthis is append data using appendFileSync
-this is append data using appendFileSync
+Debugging Node app : 
+ - console.log 
+- node debugger in chorme
+     add debugger  : pause the program
+     node inspect app.js --title="coures"
+     node --inspect-brk app.js 
+     chorme://inspect     // remote target 
+
+ - converted in chormojs devtools sourch: 
+        (function(exports, require, module, __filename, __dirname){
+
+        })
+- fileSystem :  add folder to workspace
+restart
+
+
+

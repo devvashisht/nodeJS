@@ -79,3 +79,31 @@ encodeUri : to handle special character  are encoded
 _____________________________________________
 
 
+raw http and https moudle:
+_____________________________________________
+Expressjs.com
+static or api
+web server >  api >  database > email > 
+create web server for static or api backend
+
+get to create route
+serving static json
+send back html packag
+send back json
+
+serving content for directory
+__dirname
+__filename
+path package
+
+relative path starts with  ./
+absolute path starts with /
+ususally / woud take you to the root of the hard drive but this is access in the browser
+ so it related to webserver root
+<link rel="stylesheet" href= "./css/stylesheet.css" 
+
+multiple pages same content 
+common content 
+- partial
+
+nodemon app.js -e js,hbs

@@ -76,5 +76,6 @@ mapbox key for dev'account  :  pk.eyJ1IjoiZGV2dmFzaGlzaHQxOTg0IiwiYSI6ImNrYnN2bW
 
 encodeUri : to handle special character  are encoded
 
+_____________________________________________
 
 

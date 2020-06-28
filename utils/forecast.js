@@ -9,7 +9,7 @@ if(error){
 callback('unable to find locatino', undefined)
 } else {
     console.log('----------',response.body.current.temperature)
- callback(undefined,' It is currently ' + response.body.current.temperature + ' degress out. There is a ' + response.body.current.precipProbability + '% chance of rain.')
+ callback(undefined,' It is currently ' + response.body.current.temperature + ' degress out. There is a ' + response.body.current.precip+ '% chance of rain.')
 }
 })
 }

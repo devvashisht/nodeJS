@@ -12,6 +12,69 @@ Debugging Node app :
         })
 - fileSystem :  add folder to workspace
 restart
+-----------------------------------------------
+~ Asynchoronous programming ~
+Asynchoronous call are event registered  in nodeapi
+-js  Single thread programming  in callstack
+- node js uses other thread via c++ behind scene to mangae event 
+event loop (callback queue)
+evnet loop looks at callstak and callback queue ,once callstack is empty then call back is executed
+
+global : object in nodejs
+
+call stack : node's  main() > log('sum is 3' > removed after execution > main() pop finih)
+
+callback queue : 
+event Loop : 
+_____________________________________________
+~ Making HTtp request ~
+weatherstack.com aPi
+api access key  : 90e50391e7caa91fd424c03797cf8876
+Dashboard
+
+Upgrade
+Subscription Plan
+Account
+Payment
+API Usage
+
+Sign Out
+3-Step Quickstart Guide
+
+Welcome to the weatherstack API, Dev!
+This guide should get you started in a matter of seconds - let's dive right in:
+
+Step 1: Your API Access Key
+
+This is your API Access Key, your personal key required to authenticate with the API.
+Keep it safe! You can reset it at any time in your Account Dashboard.
+
+90e50391e7caa91fd424c03797cf8876
+Step 2: API Endpoints
+
+There are several API endpoints to choose from:
+
+Current Weather: Get current weather data.
+
+Base URL: API requests start out with the following base URL:
+http://api.weatherstack.com/
+
+query parameter : 
+baseurl/endpoint?key = value & second key pair
+
+npm request  : http request package
+
+request({url[,option],callbackHandler(error,response)})
+
+defult response  =  response.body
+
+mapbox.com : used in emberjs app as well
+mapbox key for dev'account  :  pk.eyJ1IjoiZGV2dmFzaGlzaHQxOTg0IiwiYSI6ImNrYnN2bWdtMDAzeXQyc2xjcHhhNDBiYmoifQ.2r7Dld_bAvNE0XI2Pfsqdg
+
+- low level error:  wrong url, netwrok issu
+- service level error: wrong parameter
+
+encodeUri : to handle special character  are encoded
 
 
 

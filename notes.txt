@@ -90,7 +90,7 @@ get to create route
 serving static json
 send back html packag
 send back json
-
+{
 serving content for directory
 __dirname
 __filename
@@ -101,9 +101,35 @@ absolute path starts with /
 ususally / woud take you to the root of the hard drive but this is access in the browser
  so it related to webserver root
 <link rel="stylesheet" href= "./css/stylesheet.css" 
-
+ 
 multiple pages same content 
 common content 
 - partial
-
+}
 nodemon app.js -e js,hbs
+
+
+///////////////////
+- WEB API
+- query string as a part of url
+ ? key = value e.g search = value
+ query string available on reqest 
+req.query.search
+
+- ----------------
+ ~ Integrate api with the website -
+ -  client side js has the code that is sevce via public folder-
+ - browser FETCH api used ( not in nodejs)
+
+
+---------------------------
+~~~~~~Application deployment Nodejs ~~~~~~~~~~~~~~~
+git
+
+github
+heroku : php ruby on rail java , node 
+github : development platform,npm package hosted, public private
+ - github :
+Heroku account :  dev.vashisht@gmail.com/ing_feb16
+heroku command line tool: heroku login
+___________________________--

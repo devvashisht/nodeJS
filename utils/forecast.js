@@ -8,7 +8,6 @@ if(error){
 }else if (body.error){
 callback('unable to find locatino', undefined)
 } else {
-    console.log('----------',body.current.temperature)
  callback(undefined,' It is currently ' + body.current.temperature + ' degress out. There is a ' + body.current.precip+ '% chance of rain.')
 }
 })

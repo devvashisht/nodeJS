@@ -133,3 +133,156 @@ github : development platform,npm package hosted, public private
 Heroku account :  dev.vashisht@gmail.com/ing_feb16
 heroku command line tool: heroku login
 ___________________________--
+~~~~~~ GIT  ~~~~~~~~
+git-scm.com
+pro git :  free
+insall git  (git --version)
+untracker > add >  stageed
+stage > commit >  commit
+--------------
+intergration GIT:
+git init  (untracked)
+git status
+.gitingnore > node_module/
+git add src (folder)or filename or . (all)  < staged>
+git commit  < commit>
+
+create repository in github
+ git remote add origin repostiroy url
+ git push  -u  originmaster
+----------------------------------
+~~~~SSh~~~~~~~~~~~~~~~
+via gitbash: 
+- ls -a -l ~/.ssh  list including hidden user directory (~)
+ssh-keygen -t rsa -b 4096 -C "dev.vashista@nagarro.com
+id_rsa :private
+id_rsa.pub : pub
+
+use ssh key next time : 
+- eval $(ssh-agent
+)
+register: ssh-add ~/..ssh/id_rsa
+
+- cat ~/.ssh/id_rsa.pub
+
+Check ssh connection with git hub : ssh -T git@github.com
+~~~~~~~~~`Heroku~~~~~~~~~~~~~```
+ ~ heroku keys:add
+ ~ heroku create vashisht-node-app
+  <output> https://vashisht-node-app.herokuapp.com/ | https://git.heroku.com/vashisht-node-app.git
+Script : node src/app.js
+
+port proivded by heroku 
+relatvive address for heroku
+
+heroku create 
+git push heroku webserver:master
+
+_____________________________________________
+dask and advanced (mongo db)
+- MongoDB 
+-          sql vs no sql : 
+sql uses table & no sql uses collection
+row in sql & no sql document
+column in sql vs field in no sql
+ - installling mongo db : 
+user name on mongo :dev vashihsta
+dev.vashisht@gmail.com
+-  download mongodb zip from mongodb
+launch mongod.exe --mongodeb-data-folder-path <this will launch the server and will wait for the connection
+
+127.0.0.1 port 27017
+
+mongodb admin tool : GUI: robo 3t
+configure connection on robo 3t
+- db.version()
+--------------
+connect mongodb from nodejs
+npm module driver for mongodb
+const mongodb =  require('mongodb')
+const MongoClient = mongodb.MongoClient
+const connectionURL = 'mongodb://127.0.0.1:27017'
+const databaseName = 'task-manager'
+
+MongoClient.connect(connectionURL, {useNewUrlParser: true}, (error, client) =>{
+if(error){
+   return console.log('Unable to connect to database')
+}
+console.log("Connection correctly")
+const db = client.db(databaseName)
+db.collection('users').insert({
+    name : 'Dev',
+    age : '34'
+})
+
+---object id ------------
+_id : guid :global unique identifier
+- scale well 
+- generate object id 
+
+-------------------
+~~~~~~~~``Promises~~~~~~~~~~~~~
+~~~~~~Mangoosejs.com~~~~~~~
+validation, required, type
+connect > create model(collection), 
+ODM (orm in rdbm)  :  obejct document mapper
+npm i mongoose@5.3.16
+model to create document/table(rdbm) use save
+
+data validatoin and sanitizatino
+custom validator  : validate
+ Validator npm package 
+ schema type : bufer for image, 
+
+ REST API???????????????
+ REpresentational : access and manipulate resourse with pre-definded operatoion
+ State: client request independenct ,authenticatin, opertion data
+ ____________________________________
+ Predefined operation : creatte Post / tasks
+ read get/tasks
+ read get/ tasks/:id
+
+ update patch tasks/:id
+
+ delete delete/tasks/:id
+
+
+REQEST HEADER.......
+ https rquest :
+ post /task http/1.1
+ accept : json
+ connectin : keep -alive
+ authorizatino:sdfdsfssd
+Body...........
+{fddfsfssdsd}
+
+moonges api-
+
+------------Authentication -----------
+secure user password (enrypted)
+hashed password: bcryptjs npm package
+ MiddleWare :  just before or after run code
+
+ Authentication Token :login will return authentication token
+ json web token : JWT
+
+ expiration
+
+library : npm jsonwebtoken
+jwt.sign(id,secretkey)
+3 part  :  header, datatprovided : singnature
+base64decode.org
+jwt.verify(token,secretkey)
+
+
+
+
+
+
+
+
+
+
+
+
+
